@@ -1,0 +1,205 @@
+#inside {
+    height: 400px;
+    width: 1024px;
+    background-image: url(images/image3.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+#menuPic {
+  height: 400px;
+  width: 1024px;
+  background-image: url(images/lotsOfFood.jpg);
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+  background-position: center;
+  margin: auto;
+}
+
+#allThe {
+  background-image: url(images/allTheLogos.jpg);
+  height: 400px;
+  width: 1024px;
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+  background-clip: content-box;
+  background-position: center;
+  margin: auto;
+}
+ 
+#access {
+    background-image: url(images/image3.jpg);
+    height: 400px;
+    width: 1024px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+
+body {
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    color: #FDF5EA;
+    background-size: cover;
+    background-image: url(images/back2.jpg);
+}
+
+header {
+    font-family: 'Comic Sans', cursive;
+    font-style: bold;
+    font-size: 30px;
+    
+    /*color: #F26A8D;*/
+    padding-top: 45px;
+    
+  }
+  header img {
+    float: left;
+    padding-top: 30px;
+    padding-left: 150px;
+  }
+
+  header h1 {
+    padding-bottom: 10px;
+    text-align: center;
+
+    
+  }
+
+
+  header a {
+    padding-left: 40px;
+    text-decoration: none;
+    
+    color: #FEB70B;
+    float: left;
+    
+    
+  }
+
+  header a:hover {
+    color: black;
+  }
+
+  #par {
+    font-family: 'Comic Sans', cursive;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+
+nav {
+    text-align: center;
+    padding-left: 0px;    
+    padding-right: 40px;
+  }
+  
+nav ul {
+    list-style-type: none;
+  }
+
+  nav ul li {
+    font-family: 'Comic Sans', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #FDF5EA;
+  }
+  nav ul li a:link {
+    color: #FDF5EA;
+  }
+  nav ul li a:visited {
+    color: #FDF5EA;
+  }
+  nav ul li a:hover {
+    color: black;
+  }
+
+li a {
+    display: inline;
+    width: 0px;
+  }
+
+h1 {
+    
+    font-family: 'Comic Sans', cursive; 
+}
+
+h2 {
+    
+  font-family: 'Comic Sans', cursive; 
+  font-size: 40px;
+  text-align: center;
+}
+
+#ta {
+  margin: auto;
+}
+
+table {
+  font-size: 23px;
+  font-family: 'Comic Sans', cursive; 
+  font-style: normal;
+  border-collapse: collapse;
+  margin: auto;
+}
+th {
+  color: #FFFFFF;
+  background-color: transparent;
+  padding: 20px;
+  padding-left: 40px;
+}
+tr {
+  background-color: transparent;
+}
+td {
+  color: white;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+td a {
+  text-decoration: wavy;
+}
+
+td a:link {
+  color: white;
+}
+td a:visited {
+  color: white;
+}
+td a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  font-family: 'Comic Sans', cursive;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+ 
