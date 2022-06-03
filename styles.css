@@ -98,9 +98,10 @@ header {
     /* float: right;
     padding-right: 150px;
     padding-bottom: 30px; */
+    /* border: 2px solid orange;     */
     float: right;
     padding-right: 150px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin-left: 0px;
   }
 
@@ -131,6 +132,7 @@ nav ul {
   }
 
   nav ul li {
+    border: 2px solid red;
     font-family: 'Comic Sans', cursive;
     font-size: 40px;
     font-weight: bold;
