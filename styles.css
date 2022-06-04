@@ -42,7 +42,7 @@
   }
 
 body {
-    background-color: lightgreen;
+    background-color: #04ff00;
     background-repeat: no-repeat;
     color: black;
     background-size: cover;
@@ -84,7 +84,10 @@ header {
     padding-left: 40px;
     text-decoration: none;
     
-    color: #FEB70B;
+    color: white;
+    text-shadow: 0 0 5px #FEB70B;
+
+    /* -webkit-text-stroke: 1px #FEB70B; */
     float: left;
     
     
@@ -141,13 +144,13 @@ nav ul {
   }
   nav ul li a {
     text-decoration: none;
-    color: lightgreen;
+    color: #04ff00;
   }
   nav ul li a:link {
-    color: lightgreen;
+    color: #04ff00;
   }
   nav ul li a:visited {
-    color: lightgreen;
+    color: #04ff00;
   }
   nav ul li a:hover {
     color: black;
@@ -167,6 +170,13 @@ h2 {
     
   font-family: 'Comic Sans', cursive; 
   font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+    
+  font-family: 'Comic Sans', cursive; 
+  font-size: 30px;
   text-align: center;
 }
 
