@@ -42,9 +42,9 @@
   }
 
 body {
-    background-color: lightblue;
+    background-color: lightgreen;
     background-repeat: no-repeat;
-    color: #FDF5EA;
+    color: black;
     background-size: cover;
     background-image: url(images/back2.jpg);
 }
@@ -132,7 +132,6 @@ nav ul {
   }
 
   nav ul li {
-    border: 2px solid red;
     font-family: 'Comic Sans', cursive;
     font-size: 40px;
     font-weight: bold;
@@ -142,13 +141,13 @@ nav ul {
   }
   nav ul li a {
     text-decoration: none;
-    color: #FDF5EA;
+    color: lightgreen;
   }
   nav ul li a:link {
-    color: #FDF5EA;
+    color: lightgreen;
   }
   nav ul li a:visited {
-    color: #FDF5EA;
+    color: lightgreen;
   }
   nav ul li a:hover {
     color: black;
