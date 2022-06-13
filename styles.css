@@ -41,12 +41,29 @@
     margin: auto;
   }
 
+  .menuWrapper {
+    max-height: 400px;
+    min-width: 400px;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .menuWrapper .menuItem {
+    min-width: 150px;
+    height: 300px;
+    line-height: 30px;
+    text-align: center;
+    
+  }
+
 body {
     background-color: #04ff00;
     background-repeat: no-repeat;
     color: black;
     background-size: cover;
     background-image: url(images/back2.jpg);
+    
 }
 
 header {
@@ -167,10 +184,11 @@ h1 {
 }
 
 h2 {
-    
   font-family: 'Comic Sans', cursive; 
   font-size: 40px;
   text-align: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -225,10 +243,12 @@ td a:hover {
 footer {
   font-family: 'Comic Sans', cursive;
   color: white;
+  margin-top: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 15px;
   text-align: center;
+  clear: left;
 }
 
 /* login page css */
