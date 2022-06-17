@@ -62,12 +62,12 @@ body {
     background-repeat: no-repeat;
     color: black;
     background-size: cover;
-    background-image: url(images/back2.jpg);
+    background-image: linear-gradient(340deg,#15ff00,#ffffff,#ffffff);
     
 }
 
 header {
-    font-family: 'Comic Sans';
+  font-family: montserrat,sans-serif;
     font-style: bold;
     font-size: 30px;
     
@@ -126,7 +126,7 @@ header {
   }
 
   #par {
-    font-family: 'Comic Sans', cursive;
+    font-family: montserrat,sans-serif;
     text-align: left;
     font-size: 25px;
     padding-left: 100px;
@@ -152,8 +152,8 @@ nav ul {
   }
 
   nav ul li {
-    font-family: 'Comic Sans', cursive;
-    font-size: 40px;
+    font-family: montserrat,sans-serif;
+    font-size: 45px;
     font-weight: bold;
     display: inline;
     padding-left: 40px;
@@ -161,14 +161,18 @@ nav ul {
   }
   nav ul li a {
     text-decoration: none;
-    color: #04ff00;
+    text-shadow: 0 0 5px #04ff00; 
+    color: white;
+    /* color: #04ff00; */
   }
   nav ul li a:link {
-    color: #04ff00;
+    text-shadow: 0 0 5px #04ff00; 
+    color: white;
+    /* color: #04ff00; */
   }
-  nav ul li a:visited {
+  /* nav ul li a:visited {
     color: #04ff00;
-  }
+  } */
   nav ul li a:hover {
     color: black;
   }
@@ -180,11 +184,11 @@ li a {
 
 h1 {
     
-    font-family: 'Comic Sans', cursive; 
+  font-family: montserrat,sans-serif;
 }
 
 h2 {
-  font-family: 'Comic Sans', cursive; 
+  font-family: montserrat,sans-serif;
   font-size: 40px;
   text-align: center;
   margin-top: 45px;
@@ -193,7 +197,7 @@ h2 {
 
 h3 {
     
-  font-family: 'Comic Sans', cursive; 
+  font-family: montserrat,sans-serif;
   font-size: 30px;
   text-align: center;
 }
@@ -204,7 +208,7 @@ h3 {
 
 table {
   font-size: 23px;
-  font-family: 'Comic Sans', cursive; 
+  font-family: montserrat,sans-serif;
   font-style: normal;
   border-collapse: collapse;
   margin: auto;
@@ -241,7 +245,7 @@ td a:hover {
 }
 
 footer {
-  font-family: 'Comic Sans', cursive;
+  font-family: montserrat,sans-serif;
   color: white;
   margin-top: auto;
   padding-top: 20px;
@@ -273,7 +277,7 @@ margin-bottom: 26px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
-  font-family: "Comic Sans", cursive;
+  font-family: montserrat,sans-serif;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -285,7 +289,7 @@ margin-bottom: 26px;
   font-size: 14px;
 }
 .form button {
-  font-family: "Comic Sans", cursive;
+  font-family: montserrat,sans-serif;
   text-transform: uppercase;
   outline: 0;
   background-color:#04ff00;;
