@@ -163,16 +163,11 @@ nav ul {
     text-decoration: none;
     text-shadow: 0 0 5px #04ff00; 
     color: white;
-    /* color: #04ff00; */
   }
   nav ul li a:link {
     text-shadow: 0 0 5px #04ff00; 
     color: white;
-    /* color: #04ff00; */
   }
-  /* nav ul li a:visited {
-    color: #04ff00;
-  } */
   nav ul li a:hover {
     color: black;
   }
@@ -193,6 +188,25 @@ h2 {
   text-align: center;
   margin-top: 45px;
   margin-bottom: 20px;
+}
+h2 a {
+  text-decoration: none;
+  font-size: 50px;
+  text-shadow: 0 0 5px #04ff00; 
+  color: white;
+  padding: 16px;
+  border: 2.5px solid #04ff00;
+  border-radius: 45px;
+}
+h2 a:link {
+  text-shadow: 0 0 5px #04ff00; 
+  color: white;
+}
+h2 a:hover {
+  /* color: black; */
+  background-color: #F0F0F0;
+  border: 3.5px solid #04ff00;
+  border-radius: 45px;
 }
 
 h3 {
