@@ -1,9 +1,7 @@
 #inside {
     height: 400px;
     width: 1024px;
-    background-image: url(images/image3.jpg);
     background-repeat: no-repeat;
-
     background-size: cover;
     background-position: center;
     margin: auto;
