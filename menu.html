@@ -8,34 +8,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">  
   </head>
-  <body> 
+  <body style="
+  background-image: linear-gradient(340deg,#15ff00, #15ff00, palegreen, palegreen ,#ffffff, #ffffff);"> 
     <main style="height: 600vh;">
-    <header style="padding-bottom: 90px; padding-left: 9px; padding-top: 55px;">
+
+  <br/>
+  <br/>
+
+<!--nav bar-->
+<nav style="padding-left:10px ; padding-bottom:10px; padding-top: 5px; ">
+  <ul>
+    <li><a href="menu.html">See Menu</a></li>
+    <li><a href="startOrder.html">Start Order</a></li>
+    <li><a href="allOrders.html">View Orders</a></li>
+    <li>
+      <a style="transform: scale(0);" id = "link" href="finalOrder.html"><img src="images/cart.png" width="100" height="100" alt="Cart logo"/></a></li>
+  </ul>
+</nav>
+
+
+    <header style="padding-bottom: 30px; padding-left: 9px; padding-top: 20px;">
       <img src= "images/logo.JPG" alt="linetimes logo" height="129.5px" />
       <h1 style="font-weight: bold; padding-top: 45px; padding-bottom: 51px;"><a href="index.html">LineTimes</a></h1>
     </header>
 
-    <!--nav bar-->
-    <nav style="padding-left:10px ; padding-bottom:10px;">
-      <ul>
-        <li><a href="menu.html">See Menu</a></li>
-        <li><a href="startOrder.html">Start Order</a></li>
-        <li><a href="allOrders.html">View Orders</a></li>
-      </ul>
-    </nav>
+    
 
     <h2 style="font-weight: bold;">Menu Page!</h2>
 
 
-    <h2 style="font-weight: bold;">
-      Peeps, this is where the api call will come into play. You would just call
-      the api here and display the menu items in a view. So like a table or
-      something.
-    </h2>
-
-    <h2 style="font-weight: bold;">
-      I also added a js file just to have it, as well as an images folder. Yeah
-      i think that is about it.
+    <h2 style="font-weight: bold; padding-left: 20px; padding-right: 20px;">
+      This is your menu page. All of the items for your menu are listed 
+      here. They are ordered by drinks and drink type as well as food and food type.
     </h2>
 
     <div id="inside" style="padding-bottom: 100px;">
@@ -43,7 +47,7 @@
       <!-- EVERY MENU ITEM HERE IS TEMPORARY -->
       <!-- THE FINAL PROJECT WILL NOT HAVE AS MUCH HTML -->
 
-      <h3>Drinks</h3>
+      <h3 style = "font-weight: bold; padding-top: 50px; padding-bottom: 30px; text-shadow: 0 0 5px black; color: white; font-size: 60px;">Drinks</h3>
 
       <div class="hotCoffeesMenu">
       <h2>Hot Coffees</h2>
@@ -528,7 +532,7 @@
       </div>
       </div>
 
-      <h3>Food</h3>
+      <h3 style = "font-weight: bold; padding-top: 70px; padding-bottom: 30px; text-shadow: 0 0 5px black; color: white; font-size: 70px;">Food</h3>
 
       <div class="hotBreakfastMenu">
       <h2>Hot Breakfast</h2>
@@ -891,7 +895,7 @@
 
 </main>
     <!-- footer!-->
-    <footer style="margin-bottom: 80px; padding-top: 10px;" >
+    <footer style="margin-bottom: 150px; padding-top: 2550px;" >
       Copyright &copy; 2022 LineTimes<br />
       Alex Sami Will Christian
     </footer>

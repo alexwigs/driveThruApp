@@ -39,6 +39,12 @@
     margin: auto;
   }
 
+  .hotCoffeesMenu h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+
   .menuWrapper {
     max-height: 400px;
     min-width: 400px;
@@ -151,7 +157,7 @@ nav ul {
 
   nav ul li {
     font-family: montserrat,sans-serif;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
     display: inline;
     padding-left: 40px;
@@ -258,6 +264,7 @@ td a:hover {
 
 footer {
   font-family: montserrat,sans-serif;
+  font-weight: bold;
   color: white;
   margin-top: auto;
   padding-top: 20px;
