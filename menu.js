@@ -6,7 +6,7 @@
 const hotCoffeesList = document.querySelector('.hotCoffees');
 const hotTeasList = document.querySelector('.hotTeas');
 const hotDrinksList = document.querySelector('.hotDrinks');
-const frapList = document.querySelector('.frap');
+const frapsList = document.querySelector('.fraps');
 const coldCoffeesList = document.querySelector('.coldCoffees');
 const icedTeasList = document.querySelector('.icedTeas');
 const coldDrinksList = document.querySelector('.coldDrinks');
@@ -38,8 +38,8 @@ const addItem = (menuItem, colName) => {
         case 'hotDrinks':
             hotDrinksList.innerHTML += html;
             break;
-        case 'frap':
-            frapList.innerHTML += html;
+        case 'fraps':
+            frapsList.innerHTML += html;
             break;
         case 'coldCoffees':
             coldCoffeesList.innerHTML += html;
@@ -63,10 +63,12 @@ const addItem = (menuItem, colName) => {
             snacks.innerHTML += html;
             break;
         case 'oatmeal':
-            snacks.innerHTML += html;
+            oatmeal.innerHTML += html;
             break;
-
-    }
+        default:
+            console.log('an error has occured');
+            break;
+    };
 
     // if (colName == 'coldDrinks') {
     //     coldDrinksList.innerHTML += html;
@@ -83,10 +85,8 @@ const addItem = (menuItem, colName) => {
 
 // a snapshot is a picture of what the collection of data looks like in that period of time
 db.collection('hotCoffees').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'hotCoffees';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -94,10 +94,8 @@ db.collection('hotCoffees').get().then((snapshot) => {
 });
 
 db.collection('hotTeas').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'hotTeas';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -105,21 +103,17 @@ db.collection('hotTeas').get().then((snapshot) => {
 });
 
 db.collection('hotDrinks').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'hotDrinks';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
     console.log(err);
 });
 
-db.collection('frap').get().then((snapshot) => {
-    // when we have the data
-    const collectionName = 'frap';
+db.collection('fraps').get().then((snapshot) => {
+    const collectionName = 'fraps';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -127,10 +121,8 @@ db.collection('frap').get().then((snapshot) => {
 });
 
 db.collection('coldCoffees').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'coldCoffees';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -138,10 +130,8 @@ db.collection('coldCoffees').get().then((snapshot) => {
 });
 
 db.collection('icedTeas').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'icedTeas';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -149,10 +139,8 @@ db.collection('icedTeas').get().then((snapshot) => {
 });
 
 db.collection('coldDrinks').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'coldDrinks';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -160,10 +148,8 @@ db.collection('coldDrinks').get().then((snapshot) => {
 });
 
 db.collection('hotBreakfast').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'hotBreakfast';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -171,10 +157,8 @@ db.collection('hotBreakfast').get().then((snapshot) => {
 });
 
 db.collection('bakery').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'bakery';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -182,10 +166,8 @@ db.collection('bakery').get().then((snapshot) => {
 });
 
 db.collection('lunch').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'lunch';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -193,10 +175,8 @@ db.collection('lunch').get().then((snapshot) => {
 });
 
 db.collection('snacks').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'snacks';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
@@ -204,10 +184,8 @@ db.collection('snacks').get().then((snapshot) => {
 });
 
 db.collection('oatmeal').get().then((snapshot) => {
-    // when we have the data
     const collectionName = 'oatmeal';
     snapshot.docs.forEach(doc => {
-        // console.log(doc.data());
         addItem(doc.data(), collectionName);
     });
 }).catch(err => {
