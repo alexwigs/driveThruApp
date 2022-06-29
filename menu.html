@@ -47,6 +47,23 @@
       <!-- EVERY MENU ITEM HERE IS TEMPORARY -->
       <!-- THE FINAL PROJECT WILL NOT HAVE AS MUCH HTML -->
 
+      <div class="container my-5">
+        <h2>Drinks</h2>
+        <ul>
+          <li>Strawberry Refresher</li>
+          <li>Strawberry Lemonade Refresher</li>
+        </ul>
+        <form>
+          <label for="drink">Add a new drink</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="drink" required>
+            <div class="input-group-append">
+              <input type="submit" value="add" class="btn btn-outline-secondary">
+            </div>
+          </div>
+        </form>
+      </div>
+
       <h3 style = "font-weight: bold; padding-top: 50px; padding-bottom: 30px; text-shadow: 0 0 5px black; color: white; font-size: 60px;">Drinks</h3>
 
       <div class="hotCoffeesMenu">
@@ -256,9 +273,9 @@
       </div>
       </div>
 
-      <div class="frappuccinoBlendedBeveragesMenu">
+      <div class="frapMenu">
       <h2>Frappuccino Blended Beverages</h2>
-      <div class="menuItems menuWrapper d-flex flex-row flex-nowrap overflow-auto frappuccinoBlendedBeverages">
+      <div class="menuItems menuWrapper d-flex flex-row flex-nowrap overflow-auto frap">
 
         <div class="card card-block menuItem mx-2 my-auto mr-2">
           <img src="images/cart.png" class="card-img-top" alt="...">
@@ -748,7 +765,7 @@
       <!-- Snacks & Sweets -->
       <div class="snacksAndSweetsMenu">
         <h2>Snacks & Sweets</h2>
-        <div class="menuItems menuWrapper d-flex flex-row flex-nowrap overflow-auto snacksAndSweets">
+        <div class="menuItems menuWrapper d-flex flex-row flex-nowrap overflow-auto snacks">
   
           <div class="card card-block menuItem mx-2 my-auto mr-2">
             <img src="/images/cart.png" class="card-img-top" alt="...">
@@ -819,7 +836,7 @@
       <!-- Frappuccino® Blended Coffee -->
       <div class="oatmealAndYogurtMenu">
         <h2>Oatmeal & Yogurt</h2>
-        <div class="menuItems menuWrapper d-flex flex-row flex-nowrap overflow-auto oatmealAndYogurt">
+        <div class="menuItems menuWrapper d-flex flex-row flex-nowrap overflow-auto oatmeal">
   
           <div class="card card-block menuItem mx-2 my-auto mr-2">
             <img src="/images/cart.png" class="card-img-top" alt="...">
@@ -900,35 +917,20 @@
       Alex Sami Will Christian
     </footer>
 
-    <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-auth-compat.js"></script> -->
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCks998C90MScQ5LBGr4IhWWl-WYsA7EzI",
-        authDomain: "starbucks-drivethru-javascript.firebaseapp.com",
-        projectId: "starbucks-drivethru-javascript",
-        storageBucket: "starbucks-drivethru-javascript.appspot.com",
-        messagingSenderId: "322077469115",
-        appId: "1:322077469115:web:e307e3d0863f755284bc9e",
-        measurementId: "G-HVJ9CN148G"
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyCreO_nt4FZzRH99Vv3_9yxbuQ0gawq5do",
+        authDomain: "starbucks-menu-javascript.firebaseapp.com",
+        databaseURL: "https://starbucks-menu-javascript.firebaseio.com",
+        projectId: "starbucks-menu-javascript",
+        storageBucket: "starbucks-menu-javascript.appspot.com",
+        messagingSenderId: "493933593937"
       };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
+      firebase.initializeApp(config);
       const db = firebase.firestore();
     </script>
-    
-
-    <script src="first.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
