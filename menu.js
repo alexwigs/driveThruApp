@@ -22,8 +22,12 @@ const addItem = (menuItem, colName) => {
         <img src="images/cart.png" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">${menuItem.name}</h5>
-        <p class="card-text">temp p tag</p>
-        <a href="#" class="btn btn-primary">View ingredients</a>
+     <!-- add .toFixed to price after database is ready -->
+        <p class="card-text">$${(menuItem.price)}</p> 
+           <div class = "btn btn-primary" >
+                <class="btn btn-primary" class = "popup" onclick = "myFunction()" >View Ingredients</a>
+                <span class = "popuptext"  id="myPopup">${menuItem.ingredients}</span>
+            </div>
         </div>
     </div>
     `;
@@ -82,6 +86,11 @@ const addItem = (menuItem, colName) => {
 }
 
 
+// When the user clicks view ingredients open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
 
 // a snapshot is a picture of what the collection of data looks like in that period of time
 db.collection('hotCoffees').get().then((snapshot) => {
