@@ -23,7 +23,7 @@ const addItem = (menuItem, colName) => {
         <div class="card-body">
         <h5 class="card-title">${menuItem.name}</h5>
      <!-- add .toFixed to price after database is ready -->
-        <p class="card-text">$${(menuItem.price)}</p> 
+        <p class="card-text">$${(menuItem.price).toFixed(2)}</p> 
            <div class = "btn btn-primary" >
                 <class="btn btn-primary" class = "popup" onclick = "myFunction()" >View Ingredients</a>
                 <span class = "popuptext"  id="myPopup">${menuItem.ingredients}</span>
