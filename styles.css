@@ -340,6 +340,9 @@ margin-bottom: 26px;
   text-decoration: none;
 }
 
+span {
+  color: red;
+}
 
 /* Popup container */
 .popup {

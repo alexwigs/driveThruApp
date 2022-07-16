@@ -16,6 +16,7 @@
          style="font-size: 110px; padding-top: 30px;" >LineTimes</a></h1>
     </header>
 
+    <main>
     <div class="login-page">
         <div class="form">
           <div class="login">
@@ -25,12 +26,12 @@
     font-family: montserrat,sans-serif; margin-bottom: 40px;">Please enter your credentials to login.</p>
             </div>
           </div>
-          <form class="login-form">
-            <input type="text" placeholder="username"/>
+          <form class="login-form" id="profile_form" method="get" action="index.html">
+            <input type="text" placeholder="username" id = "user" />
             <span></span>
-            <input type="password" placeholder="password"/>
+            <input type="password" placeholder="password" id = "pass" />
             <span></span>
-            <button>login</button>
+            <button id = "save" >Login</button>
           </form>
         </div>
       </div>
@@ -44,7 +45,6 @@
 
     <br />
 
-    <main>
     </main>
 
     <!-- footer!-->
@@ -53,6 +53,49 @@
       Alex Sami Will Christian
     </footer>
 
-    <script src="first.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script>$( document ).ready( () => {
+
+      $( "#save" ).click( () => {
+
+        $('#profile_form').submit(function(event) {
+          
+          // window.history.back();
+      
+
+          $("span").text("");   // clear any previous error messages
+          
+          // get values entered by user
+          const pass = $("#pass").val();
+          const user = $("#user").val();
+  
+          // regular expressions for validity testing
+          const userPattern = /^[\w\.\-]+@[\w\.\-]+\.[a-zA-Z]+$/;
+          
+          // check user entries for validity
+          let isValid = true;
+          if ( (user === "" || !userPattern.test(email)) && user !== "test@test.com" ) {
+              isValid = false;
+              $("#user").next().text("Please enter a valid username.");
+              event.preventDefault();
+          } 
+          if  (pass === "" || pass !== "test1!"   ) {
+              isValid = false;
+              $("#pass").next().text("Your password was incorrect");
+              event.preventDefault();
+          }  
+          if ( isValid ) { 
+              $("#profile_form").submit();
+          } 
+          
+          $("#user").focus(); 
+
+      });
+
+    });
+
+      // set focus on initial load
+      $("#user").focus();
+  });</script>
   </body>
 </html>
