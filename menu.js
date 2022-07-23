@@ -18,7 +18,7 @@ const oatmeal = document.querySelector('.oatmeal');
 
 const addItem = (menuItem, colName) => {
     let html = `
-    <div class="card card-block menuItem mx-2 my-auto mr-2">
+    <div class="card card-block menuItem mx-3 my-auto mr-2">
         <img src="images/cart.png" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">${menuItem.name}</h5>
