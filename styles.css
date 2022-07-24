@@ -39,12 +39,6 @@
     margin: auto;
   }
 
-  .hotCoffeesMenu h2 {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-weight: bold;
-  }
-
   .menuWrapper {
     height: 450px;
     min-width: 400px;
@@ -73,10 +67,24 @@
   .card {
     margin: 50px;
     margin-bottom: 25px;
+    width: 450px;
+  }
+
+  .card-block {
+    margin-right: 300px;
+    width: 450px;
   }
 
   .card-img-top {
     padding: 10px;
+  }
+
+  .menuItem {
+    
+  }
+
+  .card-body {
+    width: 200px;
   }
 
 body {
