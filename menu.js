@@ -17,20 +17,13 @@ const snacks = document.querySelector('.snacks');
 const oatmeal = document.querySelector('.oatmeal');
 
 const addItem = (menuItem, colName) => {
-    // console.log(menuItem)
-    // let itemName = menuItem.name;
-    // itemName.replace('_', ' ');
-    // console.log(itemName);
 
-
-    
-    
-
-
+    let itemName = menuItem.name;
+    console.log(itemName);
 
     let html = `
     <div class="card card-block menuItem mx-3 my-auto mr-2">
-        <img src="images/menu/Caffè_Americano.jpg" class="card-img-top" alt="...">
+        <img src="images/menu/${itemName}.jpg" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">${menuItem.name}</h5>
      <!-- add .toFixed to price after database is ready -->
@@ -126,7 +119,6 @@ db.collection('hotTeas').get().then((snapshot) => {
 });
 
 db.collection('hotDrinks').get().then((snapshot) => {
-    console.log(snapshot.docs);
     const collectionName = 'hotDrinks';
     snapshot.docs.forEach(doc => {
         addItem(doc.data(), collectionName);
@@ -215,8 +207,4 @@ db.collection('oatmeal').get().then((snapshot) => {
 }).catch(err => {
     console.log(err);
 });
-
-
-
-console.log('test');
 

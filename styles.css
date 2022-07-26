@@ -84,6 +84,9 @@
   .card-img-top {
     padding: 10px;
     width: 200px;
+    margin: auto;
+    width: 200;
+    height: 200;
   }
 
   .menuItem {
