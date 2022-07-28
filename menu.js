@@ -17,10 +17,7 @@ const snacks = document.querySelector('.snacks');
 const oatmeal = document.querySelector('.oatmeal');
 
 const addItem = (menuItem, colName) => {
-
     let itemName = menuItem.name;
-    console.log(itemName);
-
     let html = `
     <div class="card card-block menuItem mx-3 my-auto mr-2">
         <img src="images/menu/${itemName}.jpg" class="card-img-top" alt="...">
@@ -29,11 +26,11 @@ const addItem = (menuItem, colName) => {
      <!-- add .toFixed to price after database is ready -->
         <p class="card-text">${(menuItem.price).toFixed(2)}</p> 
            <div class = "btn btn-primary" >
-                <class="btn btn-primary" class = "popup" onclick = "myFunction()" >View Ingredients</a>
+                <class="btn btn-primary" class = "popup" onclick = "showIngredients()" >View Ingredients</a>
                 <span class = "popuptext"  id="myPopup">${menuItem.ingredients}</span>
             </div>
             <div class = "btn btn-primary my-2" >
-                <button id="${(menuItem.name)} button" class="btn btn-primary">Add to Order</button>
+                <button id="${(menuItem.name)}-button" class="btn btn-primary add">Add to Order</button>
             </div>
         </div>
     </div>
@@ -91,13 +88,6 @@ const addItem = (menuItem, colName) => {
 
     // switch()
 }
-
-
-// When the user clicks view ingredients open the popup
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
 
 // a snapshot is a picture of what the collection of data looks like in that period of time
 db.collection('hotCoffees').get().then((snapshot) => {
@@ -207,4 +197,16 @@ db.collection('oatmeal').get().then((snapshot) => {
 }).catch(err => {
     console.log(err);
 });
+
+// When the user clicks view ingredients open the popup
+function showIngredients() {
+    let popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+
+const add = document.querySelectorAll('add');
+console.log(add);
+
+
 
