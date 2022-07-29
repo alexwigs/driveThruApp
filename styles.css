@@ -383,6 +383,7 @@ span {
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
+  /* display: none; */
   width: 160px;
   background-color: #555;
   color: #fff;
