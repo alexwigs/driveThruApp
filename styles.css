@@ -89,10 +89,6 @@
     height: 200;
   }
 
-  .menuItem {
-    
-  }
-
   .card-body {
     /* width: 200px; */
     padding: auto;
@@ -230,6 +226,7 @@ h2 {
   text-align: center;
   margin-top: 45px;
   margin-bottom: 20px;
+  clear: left;
 }
 h2 a {
   text-decoration: none;

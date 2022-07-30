@@ -32,7 +32,7 @@ const addItem = (menuItem, colName) => {
                 <span class = "popuptext" onclick = "hideIngredients('#${newName}')" id="${newName}-text">${menuItem.ingredients}</span>
             </div>
             <div class = "btn btn-primary my-2" >
-                <button id="${(newName)}-add" onclick = "addOrder('#${newName}', '${menuItem.price}')" class="btn btn-primary add">Add to Order</button>
+                <button id="${(newName)}-add" onclick = "addOrder('#${newName}', '${menuItem.price}', '${menuItem.ingredients}', '${(itemName)}')" class="btn btn-primary add">Add to Order</button>
             </div>
         </div>
     </div>
@@ -214,12 +214,19 @@ const showIngredients = (item) => {
 };
 
 // When the user clicks Add to Order add to local storage
-const addOrder = (itemID, itemPrice) => {
+const addOrder = (itemID, itemPrice, itemIngredients, itemName) => {
     console.log(itemID);
     console.log(itemPrice);
-    const item = document.querySelector(itemID);
-    
-    console.log(item);
+    console.log(itemIngredients);
+
+    let itemNum = localStorage.length + 1;
+    console.log(itemNum);
+
+    const order = {
+        id: itemID, name: itemName, price: itemPrice, ingredients: itemIngredients
+    };
+
+    localStorage.setItem(itemNum, JSON.stringify(order));
 }
 
 
