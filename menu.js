@@ -26,7 +26,7 @@ const addItem = (menuItem, colName) => {
         <img src="images/menu/${menuItem.name}.jpg" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">${menuItem.name}</h5>
-        <p class="card-text">${(menuItem.price).toFixed(2)}</p> 
+        <p class="card-text">$${(menuItem.price).toFixed(2)}</p> 
            <div class = "btn btn-primary" >
                 <class="btn btn-primary" class = "popup" id="${newName}" onclick = "showIngredients('#${newName}')">View Ingredients</a>
                 <span class = "popuptext" onclick = "hideIngredients('#${newName}')" id="${newName}-text">${menuItem.ingredients}</span>

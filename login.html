@@ -7,88 +7,47 @@
     <link rel="icon" href="images/logo.JPG" type="image/icon type" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body style="
-  background-image: linear-gradient(340deg,#15ff00,#ffffff,#ffffff);">
-  
-    <header style= "padding-left: 150px; padding-bottom: 50px;padding-right: 150px; padding-top: 20px;" >
-      <img src="images/logo.JPG" height="200" alt="Foodio logo" />
-      <h1><a href="login.html" onMouseOver="this.style.color='white'" onMouseOut="this.style.color='white'"
-         style="font-size: 110px; padding-top: 30px;" >LineTimes</a></h1>
+  <body>
+    <main style="height: 100vh;">
+    <header>
+      <img src="images/logo.JPG" height="100" alt="Foodio logo" />
+      <h1><a href="index.html">LineTimes</a></h1>
     </header>
+    <h2 style="text-shadow: 0 0 5px black; color: white; font-size: 50px;">Welcome to LineTimes!</h2>
+    <h3 style="font-size: 35px;">Where order taking is easy!</h3>
+    <h3 style="padding-bottom: 30px;">Choose one of the options below to get started!</h3>
 
-    <main style="height: 75vh;">
-    <div class="login-page">
-        <div class="form">
-          <div class="login">
-            <div class="login-header">
-              <h3>LOGIN</h3>
-              <p style="
-    font-family: montserrat,sans-serif; margin-bottom: 40px;">Please enter your credentials to login.</p>
-            </div>
-          </div>
-          <form class="login-form" id="profile_form" method="get" action="index.html">
-            <input type="text" placeholder="username" id = "user" />
-            <span></span>
-            <input type="password" placeholder="password" id = "pass" />
-            <span></span>
-            <button id = "save" >Login</button>
-          </form>
-        </div>
-      </div>
+    <!--nav bar-->
+    <nav>
+      <ul>
+        <li><a href="menu.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='white'" style= "
+          text-shadow: 0 0 5px #04ff00; color: white; font-size: 50px;" >See Menu</a></li>
+        <li><a href="startOrder.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='white'" style= "
+          text-shadow: 0 0 5px #04ff00; color: white; font-size: 50px;" >Start Order</a></li>
+        <li><a href="allOrders.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='white'" style= "
+          text-shadow: 0 0 5px #04ff00; color: white; font-size: 50px;" >View Orders</a></li>
+      </ul>
+    </nav>
 
+    <h3 style="padding-top: 30px;">
+      This is your home page! Above you have three options. You can view your menu, 
+      start an order, or view previous orders. We are here to make order taking fast and easy. Just 
+      start a new order, add what the guest wants, input their name, and that's it! 
+    </h3>
 
+    <h3>
+      Not only can you use this app in restaurant, but you can even use it outside in the drive thru.
+      No more waiting for all of the cars to pull up to the speaker. Now, with LineTimes, you can bring the speaker 
+      to them!
+    </h3>
 
-    </main>
 
     <!-- footer!-->
     <footer>
       Copyright &copy; 2022 LineTimes<br />
       Alex Sami Will Christian
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script>$( document ).ready( () => {
-
-      $( "#save" ).click( () => {
-
-        $('#profile_form').submit(function(event) {
-          
-          // window.history.back();
-      
-
-          $("span").text("");   // clear any previous error messages
-          
-          // get values entered by user
-          const pass = $("#pass").val();
-          const user = $("#user").val();
-  
-          // regular expressions for validity testing
-          const userPattern = /^[\w\.\-]+@[\w\.\-]+\.[a-zA-Z]+$/;
-          
-          // check user entries for validity
-          let isValid = true;
-          if ( (user === "" || !userPattern.test(email)) && user !== "test@test.com" ) {
-              isValid = false;
-              $("#user").next().text("Please enter a valid username.");
-              event.preventDefault();
-          } 
-          if  (pass === "" || pass !== "test1!"   ) {
-              isValid = false;
-              $("#pass").next().text("Your password was incorrect");
-              event.preventDefault();
-          }  
-          if ( isValid ) { 
-              $("#profile_form").submit();
-          } 
-          
-          $("#user").focus(); 
-
-      });
-
-    });
-
-      // set focus on initial load
-      $("#user").focus();
-  });</script>
+    <script src="first.js"></script>
+  </main>
   </body>
 </html>
