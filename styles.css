@@ -345,6 +345,7 @@ span {
 }
 
 /* Popup container */
+
 .popup {
   position: relative;
   display: inline-block;
@@ -352,6 +353,7 @@ span {
 }
 
 /* The actual popup (appears on top) */
+
 .popup .popuptext {
   visibility: hidden;
   width: 160px;
@@ -368,6 +370,7 @@ span {
 }
 
 /* Popup arrow */
+
 .popup .popuptext::after {
   content: "";
   position: absolute;
@@ -380,6 +383,7 @@ span {
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
+
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
@@ -387,6 +391,7 @@ span {
 }
 
 /* Add animation (fade in the popup) */
+
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
@@ -395,4 +400,271 @@ span {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+/* for phones and smaller devices */
+
+@media (max-width:601px) {
+  /* header {
+    padding-left: 75px;
+  /* } */
+  li a {
+    text-align: center;
+  } 
+
+  nav ul li {
+    font-size: 10px;
+    /* display: block; */
+    padding-bottom: 40px;
+  }
+
+  /* #homebanner {
+    background-image: url("images/banners_mobile/home.png");
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #aboutbanner {
+    background-image: url("images/banners_mobile/about.png");
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #plushiesbanner {
+    background-image: url("images/banners_mobile/plushies.png");
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #figuresbanner {
+    background-image: url("images/banners_mobile/figures.png");
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #gamesbanner {
+    background-image: url("images/banners_mobile/games.png");
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #accessbanner {
+    background-image: url("images/banners_mobile/accessories.png");
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+
+  #wrapper {
+    min-width: 375px;
+    max-width: 600px;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .row img {
+    width: 170px;
+    height: 170px;
+  }
+
+  /*make options a little more to the left*/
+  /* #options {
+    padding-right: 50px;
+  }
+  #options img {
+    margin: 10px;
+    width: 140px;
+    height: 140px;
+  }
+  .gridcollection {
+    gap: 25px;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: auto;
+  }
+  .gridcollection img {
+    width: 280px;
+    height: 280px;
+  }
+  #iteminfo h1 {
+    padding-left: 50px;
+    font-size: 35px;
+  }
+  #iteminfo img {
+    width: 400px;
+    height: 400px;
+  }
+  #iteminfo p {
+    color: #F59CBB;
+    text-overflow: clip;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #buy img {
+    display: block;
+    margin-left: 300px;
+    margin-right: auto;
+  }
+  #socials img {
+    margin: 30px;
+  } */
+  
+/* 
+  form {
+    width: 40%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 6em 1fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input[type="submit"] {
+    grid-column: 2/3;
+    width: 9em;
+  } */
+}
+
+/* midsize devices  */
+
+@media (max-width:1023px) {
+  /*GET RID OF DUPLICATE CODE*/
+  nav {
+    text-align: center;
+    padding-left: 0px;
+  }
+  li a {
+    display: inline;
+  }
+
+  nav ul li {
+    font-size: 30px;
+    /* display: block; */
+    padding-bottom: 40px;
+  }
+
+  /* #socials {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  #homebanner {
+    background-image: url("images/banners/home.png");
+    height: 400px;
+    width: 1024px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  #aboutbanner {
+    background-image: url("images/banners/about.png");
+    height: 400px;
+    width: 1024px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  #plushiesbanner {
+    background-image: url("images/banners/plushies.png");
+    height: 400px;
+    width: 1024px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  #figuresbanner {
+    background-image: url("images/banners/figures.png");
+    height: 400px;
+    width: 1024px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  #gamesbanner {
+    background-image: url("images/banners/games.png");
+    height: 400px;
+    width: 1024px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  #accessbanner {
+    background-image: url("images/banners/accessories.png");
+    height: 400px;
+    width: 1024px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  #wrapper {
+    min-width: 1024px;
+    width: 80%;
+  }
+  #aboutinfo p {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 50px;
+  }
+  #bluemoon {
+    margin-left: 50px;
+  }
+  #pinkmoon {
+    margin-right: 50px;
+  } */
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .row img {
+    width: 250px;
+    height: 250px;
+  }
+  .rowsocial {
+    display: flex;
+    justify-content: center;
+  }
+  #options img {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+  }
+  .gridcollection {
+    gap: 30px;
+    grid-template-columns: 180px 180px 180px 180px 180px;
+    grid-template-rows: auto;
+  }
+  .gridcollection img {
+    align-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 20%;
+  }
+
+  /* #iteminfo h1 {
+    padding-left: 50px;
+    font-size: 50px;
+  }
+  #iteminfo img {
+    display: inline;
+    margin-left: 20px;
+    width: 500px;
+    height: 500px;
+  }
+  #iteminfo p {
+    font-size: 25px;
+  }
+  #buy img {
+    float: right;
+    margin-right: 150px;
+  } */
+
 }
