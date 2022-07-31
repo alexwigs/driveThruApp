@@ -17,16 +17,22 @@ const snacks = document.querySelector('.snacks');
 const oatmeal = document.querySelector('.oatmeal');
 
 const addItem = (menuItem, colName) => {
+
+    let itemName = menuItem.name;
+    let newName = itemName.replaceAll(" ", "_");
+
     let html = `
-    <div class="card card-block menuItem mx-2 my-auto mr-2">
-        <img src="images/cart.png" class="card-img-top" alt="...">
+    <div class="card card-block menuItem mx-3 my-auto mr-2">
+        <img src="images/menu/${menuItem.name}.jpg" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">${menuItem.name}</h5>
-     <!-- add .toFixed to price after database is ready -->
-        <p class="card-text">$${(menuItem.price).toFixed(2)}</p> 
+        <p class="card-text">${(menuItem.price).toFixed(2)}</p> 
            <div class = "btn btn-primary" >
-                <class="btn btn-primary" class = "popup" onclick = "myFunction()" >View Ingredients</a>
-                <span class = "popuptext"  id="myPopup">${menuItem.ingredients}</span>
+                <class="btn btn-primary" class = "popup" id="${newName}" onclick = "showIngredients('#${newName}')">View Ingredients</a>
+                <span class = "popuptext" onclick = "hideIngredients('#${newName}')" id="${newName}-text">${menuItem.ingredients}</span>
+            </div>
+            <div class = "btn btn-primary my-2" >
+                <button id="${(newName)}-add" onclick = "addOrder('#${newName}', '${menuItem.price}', '${menuItem.ingredients}', '${(itemName)}')" class="btn btn-primary add">Add to Order</button>
             </div>
         </div>
     </div>
@@ -85,14 +91,8 @@ const addItem = (menuItem, colName) => {
     // switch()
 }
 
-
-// When the user clicks view ingredients open the popup
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-
 // a snapshot is a picture of what the collection of data looks like in that period of time
+
 db.collection('hotCoffees').get().then((snapshot) => {
     const collectionName = 'hotCoffees';
     snapshot.docs.forEach(doc => {
@@ -203,5 +203,31 @@ db.collection('oatmeal').get().then((snapshot) => {
 
 
 
-console.log('test');
+// When the user clicks view ingredients open the popup
+const showIngredients = (item) => {
+    const popup = document.querySelector(item + '-text');
+    popup.style.visibility = 'visible';
+
+    setInterval(() => {
+        popup.style.visibility = 'hidden';
+    }, 5000);
+};
+
+// When the user clicks Add to Order add to local storage
+const addOrder = (itemID, itemPrice, itemIngredients, itemName) => {
+    console.log(itemID);
+    console.log(itemPrice);
+    console.log(itemIngredients);
+
+    let itemNum = localStorage.length + 1;
+    console.log(itemNum);
+
+    const order = {
+        id: itemID, name: itemName, price: itemPrice, ingredients: itemIngredients
+    };
+
+    localStorage.setItem(itemNum, JSON.stringify(order));
+}
+
+
 

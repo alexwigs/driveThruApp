@@ -39,23 +39,17 @@
     margin: auto;
   }
 
-  .hotCoffeesMenu h2 {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-weight: bold;
-  }
-
   .menuWrapper {
-    max-height: 400px;
+    height: 490px;
     min-width: 400px;
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     display: flex;
     overflow-x: auto;
   }
 
   .menuWrapper .menuItem {
-    min-width: 150px;
-    height: 300px;
+    min-width: 230px;
+    height: 460px;
     line-height: 30px;
     text-align: center;
     
@@ -63,11 +57,42 @@
 
   .card-title {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 17px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    width: 190px;
   }
 
   .card-text {
     font-weight: bold;
+    text-align: center;
+  }
+
+  .card {
+    margin: 50px;
+    margin-bottom: 25px;
+    width: 450px;
+  }
+
+  .card-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+
+  .card-img-top {
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    width: 200;
+    height: 200;
+  }
+
+  .card-body {
+    /* width: 200px; */
+    padding: auto;
+    margin: auto;
   }
 
 body {
@@ -201,6 +226,7 @@ h2 {
   text-align: center;
   margin-top: 45px;
   margin-bottom: 20px;
+  clear: left;
 }
 h2 a {
   text-decoration: none;
@@ -324,7 +350,7 @@ margin-bottom: 26px;
   width: 100%;
   border: medium solid #FEB70B;
   padding: 15px;
-  color: #FFFFFF;
+  color: black;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -356,6 +382,7 @@ span {
 
 .popup .popuptext {
   visibility: hidden;
+  /* display: none; */
   width: 160px;
   background-color: #555;
   color: #fff;
