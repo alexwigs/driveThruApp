@@ -561,7 +561,7 @@ span {
 
 /* midsize devices  */
 
-@media (max-width:1023px) {
+@media (max-width:1181px) {
   /*GET RID OF DUPLICATE CODE*/
   nav {
     text-align: center;
@@ -576,6 +576,24 @@ span {
     /* display: block; */
     padding-bottom: 40px;
   }
+
+  .form {
+    padding-top: 10px;
+    margin-top: 300px;
+    position: inherit;
+  }
+
+  #link {
+    height: 50px;
+    padding-top: 50px;
+  }
+  /* h3 {
+    padding-right: 250px;
+  }
+
+  h2 {
+    padding-right: 250px;
+  } */
 
   /* #socials {
     margin-left: 75px;
